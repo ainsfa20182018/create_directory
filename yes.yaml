@@ -1,9 +1,0 @@
----
-- name: car
-  hosts: all
-  
-  - name: colors
-     -white
-     -black
-     -green
-    price: $2000
