@@ -1,5 +1,21 @@
-- user:
-    name: johnd
-    comment: "John Doe"
-    uid: 1040
-    group: admin
+---
+  - name: add user
+    hosts: all
+    tasks: 
+      - name: add group sysuser
+        group:
+          name: sysuser
+          state: present
+
+      - name: Add user john doe
+        user:
+          name: johnd
+          comment: "John Doe"
+          uid: 1040
+          group: sysuser
+
+      - name: Add user momo
+        user:
+          name: momo
+          uid: 3042
+          group: sysuser
