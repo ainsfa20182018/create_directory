@@ -1,8 +1,8 @@
 ---
-- name: I love u hanane!
+- name: Hello word!
   hosts: all
 
   tasks:
 
-  - name: I love u hanane!
+  - name: Hello word!
     shell: echo "Hi! Tower is working!"
