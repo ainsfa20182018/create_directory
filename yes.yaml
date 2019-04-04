@@ -1,0 +1,9 @@
+---
+- name: car
+  hosts: all
+  tasks:
+  - name: colors
+     -white
+     -black
+     -green
+    price: $2000
