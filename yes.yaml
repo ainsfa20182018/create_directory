@@ -1,7 +1,7 @@
 ---
 - name: car
   hosts: all
-  tasks:
+  
   - name: colors
      -white
      -black
