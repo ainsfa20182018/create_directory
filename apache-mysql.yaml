@@ -1,0 +1,19 @@
+---
+- name: apache
+  hosts: all
+  tasks:
+    - name: install apache
+      yum:
+        name: apache
+        state: present
+    - name: start apache
+      service:
+        name: apache
+        state: start
+- name: Mysql
+  hosts: all
+  tasks: 
+    - name: install Mysql
+  yum:
+      name: Mysql
+      state: present        
